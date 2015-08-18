@@ -118,7 +118,7 @@
 			{
 				if (!_input.fields)
 					_input.fields = _input.data[0] instanceof Array
-									? _input.fields
+									? _input.data[0]
 									: objectKeys(_input.data[0]);
 
 				if (!(_input.data[0] instanceof Array) && typeof _input.data[0] !== 'object')
